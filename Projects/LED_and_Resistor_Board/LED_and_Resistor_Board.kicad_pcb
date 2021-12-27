@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 8)
     (tracks 7)
     (zones 0)
     (modules 3)
@@ -219,9 +219,13 @@
     )
   )
 
-  (gr_line (start 177.8 105.41) (end 177.8 92.71) (angle 90) (layer Edge.Cuts) (width 0.05))
+  (gr_circle (center 180.34 99.06) (end 182.88 99.06) (layer Edge.Cuts) (width 0.05))
+  (gr_circle (center 133.35 99.06) (end 135.89 99.06) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 135.89 99.06) (end 135.89 105.41) (angle 90) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 135.89 99.06) (end 129.54 99.06) (angle 90) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 177.8 99.06) (end 184.15 99.06) (angle 90) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 177.8 99.06) (end 177.8 92.71) (angle 90) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 135.89 105.41) (end 177.8 105.41) (angle 90) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 135.89 92.71) (end 135.89 105.41) (angle 90) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 177.8 92.71) (end 135.89 92.71) (angle 90) (layer Edge.Cuts) (width 0.05))
 
   (segment (start 173.355 96.52) (end 162.56 96.52) (width 0.25) (layer F.Cu) (net 1) (status 400000))

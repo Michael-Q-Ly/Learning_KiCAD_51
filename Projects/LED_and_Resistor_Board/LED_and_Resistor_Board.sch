@@ -60,7 +60,7 @@ $EndComp
 Wire Wire Line
 	4950 3350 4650 3350
 Wire Wire Line
-	4650 3350 4650 3550
+	4650 3350 4650 3500
 Wire Wire Line
 	5250 3350 5500 3350
 Wire Wire Line
@@ -111,4 +111,29 @@ $EndComp
 Wire Wire Line
 	4200 3350 4650 3350
 Connection ~ 4650 3350
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 61CB92CB
+P 6450 3600
+F 0 "J1" H 6422 3482 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6422 3573 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6450 3600 50  0001 C CNN
+F 3 "~" H 6450 3600 50  0001 C CNN
+	1    6450 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 3500 6000 3500
+Wire Wire Line
+	6000 3500 6000 3350
+Connection ~ 6000 3350
+Wire Wire Line
+	6250 3600 5000 3600
+Wire Wire Line
+	5000 3600 5000 3500
+Wire Wire Line
+	5000 3500 4650 3500
+Connection ~ 4650 3500
+Wire Wire Line
+	4650 3500 4650 3550
 $EndSCHEMATC

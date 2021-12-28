@@ -127,7 +127,11 @@
     (descr "simple 2-pin terminal block, pitch 5.08mm, revamped version of bornier2")
     (tags "terminal block bornier2")
     (path /61CB92CB)
+<<<<<<< HEAD
     (fp_text reference J1 (at 2.54 4.699 90) (layer F.SilkS)
+=======
+    (fp_text reference J1 (at 2.54 -5.08 90) (layer F.SilkS)
+>>>>>>> fe45c42cecb46565895e76c6787006f47a46505a
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x02_Male (at 2.54 5.08 90) (layer F.Fab)

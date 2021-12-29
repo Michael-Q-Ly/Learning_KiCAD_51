@@ -13,4 +13,169 @@ Comment2 "github.com/Michael-Q-Ly"
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Device:CP C?
+U 1 1 61CCC3FF
+P 4100 3750
+F 0 "C?" H 4218 3796 50  0000 L CNN
+F 1 "47 μF" H 4218 3705 50  0000 L CNN
+F 2 "" H 4138 3600 50  0001 C CNN
+F 3 "~" H 4100 3750 50  0001 C CNN
+	1    4100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 61CCDCC0
+P 4100 4150
+F 0 "C?" H 4218 4196 50  0000 L CNN
+F 1 "470 μF" H 4218 4105 50  0000 L CNN
+F 2 "" H 4138 4000 50  0001 C CNN
+F 3 "~" H 4100 4150 50  0001 C CNN
+	1    4100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61CCEDC9
+P 4800 4400
+F 0 "R?" V 4593 4400 50  0000 C CNN
+F 1 "560 Ω" V 4684 4400 50  0000 C CNN
+F 2 "" V 4730 4400 50  0001 C CNN
+F 3 "~" H 4800 4400 50  0001 C CNN
+	1    4800 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U?
+U 1 1 61CD1970
+P 4800 3850
+F 0 "U?" H 4800 4092 50  0000 C CNN
+F 1 "LM7805_TO220" H 4800 4001 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4800 4075 50  0001 C CIN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 4800 3800 50  0001 C CNN
+	1    4800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61CD6604
+P 4100 4950
+F 0 "D?" H 4093 5167 50  0000 C CNN
+F 1 "LED" H 4093 5076 50  0000 C CNN
+F 2 "" H 4100 4950 50  0001 C CNN
+F 3 "~" H 4100 4950 50  0001 C CNN
+	1    4100 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61CD7353
+P 4100 4600
+F 0 "D?" H 4093 4817 50  0000 C CNN
+F 1 "LED" H 4093 4726 50  0000 C CNN
+F 2 "" H 4100 4600 50  0001 C CNN
+F 3 "~" H 4100 4600 50  0001 C CNN
+	1    4100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 61CD7EFA
+P 5650 4950
+F 0 "D?" H 5650 5167 50  0000 C CNN
+F 1 "1N4007" H 5650 5076 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5650 4775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5650 4950 50  0001 C CNN
+	1    5650 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 61CD92BE
+P 5650 4550
+F 0 "D?" H 5650 4767 50  0000 C CNN
+F 1 "1N4007" H 5650 4676 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5650 4375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5650 4550 50  0001 C CNN
+	1    5650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 61CD9897
+P 5650 4200
+F 0 "D?" H 5650 4417 50  0000 C CNN
+F 1 "1N4007" H 5650 4326 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5650 4025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5650 4200 50  0001 C CNN
+	1    5650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 61CDA154
+P 5650 3800
+F 0 "D?" H 5650 4017 50  0000 C CNN
+F 1 "1N4007" H 5650 3926 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5650 3625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5650 3800 50  0001 C CNN
+	1    5650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61CEC084
+P 4800 4700
+F 0 "R?" V 4593 4700 50  0000 C CNN
+F 1 "560 Ω" V 4684 4700 50  0000 C CNN
+F 2 "" V 4730 4700 50  0001 C CNN
+F 3 "~" H 4800 4700 50  0001 C CNN
+	1    4800 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW?
+U 1 1 61CF1C96
+P 6250 3800
+F 0 "SW?" H 6250 4085 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 6250 3994 50  0000 C CNN
+F 2 "" H 6250 3800 50  0001 C CNN
+F 3 "~" H 6250 3800 50  0001 C CNN
+	1    6250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J?
+U 1 1 61D053F5
+P 6200 4250
+F 0 "J?" H 6250 4467 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 6250 4376 50  0000 C CNN
+F 2 "" H 6200 4250 50  0001 C CNN
+F 3 "~" H 6200 4250 50  0001 C CNN
+	1    6200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J?
+U 1 1 61D070CC
+P 6200 4650
+F 0 "J?" H 6250 4867 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 6250 4776 50  0000 C CNN
+F 2 "" H 6200 4650 50  0001 C CNN
+F 3 "~" H 6200 4650 50  0001 C CNN
+	1    6200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J?
+U 1 1 61D0A65C
+P 4800 5250
+F 0 "J?" H 4857 5567 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 4857 5476 50  0000 C CNN
+F 2 "" H 4850 5210 50  0001 C CNN
+F 3 "~" H 4850 5210 50  0001 C CNN
+	1    4800 5250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

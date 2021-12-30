@@ -46,17 +46,6 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3650 3700 50  0001 C CNN
 	1    3650 3700
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:Barrel_Jack_Switch J1
-U 1 1 61D0A65C
-P 2300 3350
-F 0 "J1" H 2357 3667 50  0000 C CNN
-F 1 "Barrel_Jack_Switch" H 2357 3576 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 2350 3310 50  0001 C CNN
-F 3 "~" H 2350 3310 50  0001 C CNN
-	1    2300 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2600 3250 2800 3250
 Wire Wire Line
@@ -67,7 +56,6 @@ Wire Wire Line
 	2600 3450 2800 3450
 Wire Wire Line
 	2800 3450 2800 3400
-NoConn ~ 2600 3350
 $Comp
 L Diode:1N4007 D2
 U 1 1 61CD9897
@@ -363,5 +351,25 @@ F 2 "LED_THT:LED_D5.0mm" H 6250 3650 50  0001 C CNN
 F 3 "~" H 6250 3650 50  0001 C CNN
 	1    6250 3650
 	0    -1   -1   0   
+$EndComp
+Text Label 3350 2600 0    50   ~ 0
+Vin
+Text Label 3400 4150 0    50   ~ 0
+V-
+Text Label 5200 2600 0    50   ~ 0
+Vout1
+Text Label 7050 2500 0    50   ~ 0
+Vout2
+NoConn ~ 2600 3350
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 61D0A65C
+P 2300 3350
+F 0 "J1" H 2357 3667 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 2357 3576 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 2350 3310 50  0001 C CNN
+F 3 "~" H 2350 3310 50  0001 C CNN
+	1    2300 3350
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

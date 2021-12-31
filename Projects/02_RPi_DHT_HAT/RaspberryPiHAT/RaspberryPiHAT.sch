@@ -14,28 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Raspberry_Pi_2_3 J1
-U 1 1 61CF6995
-P 5550 3750
-F 0 "J1" H 5550 5231 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 5550 5140 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 5550 3750 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5550 3750 50  0001 C CNN
-	1    5550 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 61CFAE04
-P 4300 2550
-F 0 "R2" H 4370 2596 50  0000 L CNN
-F 1 "R" H 4370 2505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4230 2550 50  0001 C CNN
-F 3 "~" H 4300 2550 50  0001 C CNN
-	1    4300 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 61CFD123
 P 6850 3600
@@ -49,12 +27,12 @@ $EndComp
 $Comp
 L Sensor:DHT11 U1
 U 1 1 61CFDA18
-P 4100 3200
-F 0 "U1" H 3856 3246 50  0000 R CNN
-F 1 "DHT22" H 3856 3155 50  0000 R CNN
-F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 4100 2800 50  0001 C CNN
-F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 4250 3450 50  0001 C CNN
-	1    4100 3200
+P 3750 3850
+F 0 "U1" H 3506 3896 50  0000 R CNN
+F 1 "DHT22" H 3506 3805 50  0000 R CNN
+F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 3750 3450 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 3900 4100 50  0001 C CNN
+	1    3750 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -71,23 +49,188 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 61CFF65D
-P 3300 3650
-F 0 "R1" H 3370 3696 50  0000 L CNN
-F 1 "R" H 3370 3605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3230 3650 50  0001 C CNN
-F 3 "~" H 3300 3650 50  0001 C CNN
-	1    3300 3650
+P 3200 3400
+F 0 "R1" H 3270 3446 50  0000 L CNN
+F 1 "R" H 3270 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3130 3400 50  0001 C CNN
+F 3 "~" H 3200 3400 50  0001 C CNN
+	1    3200 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_DPST SW1
 U 1 1 61D01499
-P 2850 2800
-F 0 "SW1" H 2850 3125 50  0000 C CNN
-F 1 "SW_DPST" H 2850 3034 50  0000 C CNN
-F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 2850 2800 50  0001 C CNN
-F 3 "~" H 2850 2800 50  0001 C CNN
-	1    2850 2800
+P 2850 2850
+F 0 "SW1" H 2850 3175 50  0000 C CNN
+F 1 "SW_DPST" H 2850 3084 50  0000 C CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 2850 2850 50  0001 C CNN
+F 3 "~" H 2850 2850 50  0001 C CNN
+	1    2850 2850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6850 3450 6350 3450
+Wire Wire Line
+	6850 4350 6850 5150
+Wire Wire Line
+	5250 5150 5250 5050
+Wire Wire Line
+	6850 4050 6850 3750
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 61CF6995
+P 5550 3750
+F 0 "J1" H 5550 5231 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 5550 5140 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 5550 3750 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5550 3750 50  0001 C CNN
+	1    5550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2450 5650 2200
+$Comp
+L Device:R R2
+U 1 1 61CFAE04
+P 4100 3250
+F 0 "R2" V 3893 3250 50  0000 C CNN
+F 1 "R" V 3984 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4030 3250 50  0001 C CNN
+F 3 "~" H 4100 3250 50  0001 C CNN
+	1    4100 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 3250 3750 3250
+Connection ~ 3750 3250
+Wire Wire Line
+	3750 3250 3750 3550
+Wire Wire Line
+	4250 3250 4500 3250
+Wire Wire Line
+	4500 3850 4500 3250
+Wire Wire Line
+	4050 3850 4500 3850
+Connection ~ 4500 3250
+Wire Wire Line
+	4500 3250 4750 3250
+Wire Wire Line
+	3050 2750 3050 2850
+Connection ~ 3050 2850
+Wire Wire Line
+	3050 2850 3050 2950
+Wire Wire Line
+	3050 2850 3200 2850
+Wire Wire Line
+	3200 3250 3200 2850
+Connection ~ 3200 2850
+Wire Wire Line
+	3200 2850 4750 2850
+Wire Wire Line
+	3200 3550 3200 5150
+Wire Wire Line
+	5150 5150 5150 5050
+Wire Wire Line
+	3750 4150 3750 5150
+Wire Wire Line
+	3200 5150 3750 5150
+Connection ~ 3750 5150
+Wire Wire Line
+	2650 2200 3750 2200
+Wire Wire Line
+	2650 2200 2650 2750
+Connection ~ 2650 2750
+Wire Wire Line
+	2650 2750 2650 2950
+Wire Wire Line
+	3750 2200 3750 3250
+Connection ~ 3750 2200
+Wire Wire Line
+	3750 2200 5350 2200
+NoConn ~ 4750 2950
+NoConn ~ 4750 3150
+NoConn ~ 4750 3350
+NoConn ~ 4750 3550
+NoConn ~ 4750 3650
+NoConn ~ 4750 3750
+NoConn ~ 4750 3950
+NoConn ~ 4750 4050
+NoConn ~ 4750 4150
+NoConn ~ 4750 4250
+NoConn ~ 4750 4350
+NoConn ~ 4750 4450
+NoConn ~ 5350 5050
+NoConn ~ 5450 5050
+NoConn ~ 5550 5050
+NoConn ~ 5650 5050
+NoConn ~ 5750 5050
+NoConn ~ 5850 5050
+NoConn ~ 6350 4550
+NoConn ~ 6350 4450
+NoConn ~ 6350 4250
+NoConn ~ 6350 4150
+NoConn ~ 6350 4050
+NoConn ~ 6350 3950
+NoConn ~ 6350 3850
+NoConn ~ 6350 3650
+NoConn ~ 6350 3550
+NoConn ~ 6350 3250
+NoConn ~ 6350 3150
+NoConn ~ 6350 2950
+NoConn ~ 6350 2850
+NoConn ~ 5750 2450
+NoConn ~ 5450 2450
+NoConn ~ 5350 2450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61D30DD8
+P 5350 2050
+F 0 "#FLG0101" H 5350 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 5350 2223 50  0000 C CNN
+F 2 "" H 5350 2050 50  0001 C CNN
+F 3 "~" H 5350 2050 50  0001 C CNN
+	1    5350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2050 5350 2200
+Connection ~ 5350 2200
+Wire Wire Line
+	5350 2200 5650 2200
+Wire Wire Line
+	3750 5150 4900 5150
+Wire Wire Line
+	5250 5150 5500 5150
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61D3DF92
+P 4900 5250
+F 0 "#FLG0102" H 4900 5325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4900 5423 50  0000 C CNN
+F 2 "" H 4900 5250 50  0001 C CNN
+F 3 "~" H 4900 5250 50  0001 C CNN
+	1    4900 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 5250 4900 5150
+Connection ~ 4900 5150
+Wire Wire Line
+	4900 5150 5150 5150
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 61D3EFF5
+P 5500 5250
+F 0 "#FLG0103" H 5500 5325 50  0001 C CNN
+F 1 "PWR_FLAG" H 5500 5423 50  0000 C CNN
+F 2 "" H 5500 5250 50  0001 C CNN
+F 3 "~" H 5500 5250 50  0001 C CNN
+	1    5500 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 5250 5500 5150
+Connection ~ 5500 5150
+Wire Wire Line
+	5500 5150 6850 5150
 $EndSCHEMATC

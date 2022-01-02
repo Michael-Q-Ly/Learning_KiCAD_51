@@ -10,5 +10,5 @@
 8. [x] One generic connector, single row, 01x04
 9. [x] Two resistors
 10. [x] One I2C Serial EEPROM, 1024kB, DIP-8/SOIC-8/TSSOP-8/DFN-8
-11. [ ] One IC MCU 8-bit 32kB FLASH 32TQFP, Atmega328p-AU
+11. [x] One IC MCU 8-bit 32kB FLASH 32TQFP, Atmega328p-AU
 12. [ ] One clock/timer IC

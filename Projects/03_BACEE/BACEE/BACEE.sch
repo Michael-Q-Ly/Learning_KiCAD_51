@@ -101,23 +101,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 3000 5100 50 
 	1    3000 5100
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 5100 5900 1000 1100
-U 61D27AD2
-F0 "Connectors" 50
-F1 "Connectors.sch" 50
-$EndSheet
-$Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U4
-U 1 1 61D2E20A
-P 7000 3500
-F 0 "U4" H 7000 1911 50  0000 C CNN
-F 1 "ATmega328P-AU" H 7000 1820 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 7000 3500 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 7000 3500 50  0001 C CNN
-	1    7000 3500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Project3:DS1337_MLv1 U1
 U 1 1 61D31649
@@ -134,7 +117,7 @@ L Device:Crystal Y2
 U 1 1 61D3267A
 P 5800 2300
 F 0 "Y2" V 5754 2431 50  0000 L CNN
-F 1 "Crystal" V 5845 2431 50  0000 L CNN
+F 1 "Crystal 16MHz" V 5845 2431 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering" H 5800 2300 50  0001 C CNN
 F 3 "~" H 5800 2300 50  0001 C CNN
 	1    5800 2300
@@ -145,7 +128,7 @@ L Device:Crystal Y1
 U 1 1 61D331D7
 P 1900 2450
 F 0 "Y1" H 1900 2718 50  0000 C CNN
-F 1 "Crystal" H 1900 2627 50  0000 C CNN
+F 1 "Crystal 32MHz" H 1900 2627 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm" H 1900 2450 50  0001 C CNN
 F 3 "~" H 1900 2450 50  0001 C CNN
 	1    1900 2450
@@ -173,4 +156,156 @@ F 3 "" H 9250 3300 50  0001 C CNN
 	1    9250 3300
 	1    0    0    -1  
 $EndComp
+Text Label 4900 6000 2    50   ~ 0
+CIPO
+Text Label 6700 2700 2    50   ~ 0
+CIPO
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U4
+U 1 1 61D2E20A
+P 7300 3500
+F 0 "U4" H 7300 1911 50  0000 C CNN
+F 1 "ATmega328P-AU" H 7300 1820 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 7300 3500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 7300 3500 50  0001 C CNN
+	1    7300 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 6000 4900 6000
+Text Label 4900 6200 2    50   ~ 0
+SCK
+Wire Wire Line
+	5100 6200 4900 6200
+Text Label 4900 6300 2    50   ~ 0
+RESET
+Wire Wire Line
+	5100 6300 4900 6300
+Text Label 4900 6800 2    50   ~ 0
+Vcc
+Wire Wire Line
+	5100 6800 4900 6800
+Text Label 4900 6100 2    50   ~ 0
+COPI
+Wire Wire Line
+	5100 6100 4900 6100
+Text Label 4900 6900 2    50   ~ 0
+GND
+Wire Wire Line
+	5100 6900 4950 6900
+Text Label 6700 3800 2    50   ~ 0
+RESET
+Text Label 6700 2600 2    50   ~ 0
+COPI
+Text Label 6700 2800 2    50   ~ 0
+SCK
+Text Label 7250 1850 2    50   ~ 0
+Vcc
+Wire Wire Line
+	7200 2000 7250 2000
+Wire Wire Line
+	7250 1850 7250 2000
+Connection ~ 7250 2000
+Wire Wire Line
+	7250 2000 7300 2000
+Text Label 7300 5000 0    50   ~ 0
+GND
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 61D4A407
+P 4950 7150
+F 0 "#PWR?" H 4950 6950 50  0001 C CNN
+F 1 "GNDPWR" H 4954 6996 50  0000 C CNN
+F 2 "" H 4950 7100 50  0001 C CNN
+F 3 "" H 4950 7100 50  0001 C CNN
+	1    4950 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 7150 4950 6900
+Connection ~ 4950 6900
+Wire Wire Line
+	4950 6900 4900 6900
+Wire Wire Line
+	6300 6000 6100 6000
+Text Label 6300 6000 0    50   ~ 0
+SDA
+Text Label 6700 4300 2    50   ~ 0
+D3
+Text Label 6700 4200 2    50   ~ 0
+D2
+Text Label 6700 4400 2    50   ~ 0
+D4
+Text Label 6700 4500 2    50   ~ 0
+D5
+Text Label 6700 4600 2    50   ~ 0
+D6
+Text Label 6700 4700 2    50   ~ 0
+D7
+Text Label 6700 2300 2    50   ~ 0
+D8
+Text Label 6700 3600 2    50   ~ 0
+SDA
+Wire Wire Line
+	5100 6500 4900 6500
+Wire Wire Line
+	5100 6600 4900 6600
+Text Label 4900 6500 2    50   ~ 0
+RX
+Text Label 4900 6600 2    50   ~ 0
+TX
+Text Label 6700 4000 2    50   ~ 0
+RX
+Text Label 6700 4100 2    50   ~ 0
+TX
+Text Label 6300 6900 0    50   ~ 0
+D8
+Text Label 6300 6800 0    50   ~ 0
+D7
+Text Label 6300 6700 0    50   ~ 0
+D6
+Text Label 6300 6600 0    50   ~ 0
+D5
+Text Label 6300 6500 0    50   ~ 0
+D4
+Text Label 6300 6400 0    50   ~ 0
+D3
+Text Label 6300 6300 0    50   ~ 0
+D2
+Wire Wire Line
+	6300 6900 6100 6900
+Wire Wire Line
+	6300 6800 6100 6800
+Wire Wire Line
+	6300 6700 6100 6700
+Wire Wire Line
+	6300 6600 6100 6600
+Wire Wire Line
+	6300 6500 6100 6500
+Wire Wire Line
+	6300 6400 6100 6400
+Wire Wire Line
+	6300 6300 6100 6300
+$Sheet
+S 5100 5900 1000 1100
+U 61D27AD2
+F0 "Connectors" 50
+F1 "Connectors.sch" 50
+F2 "CIPO" O L 5100 6000 50 
+F3 "SCK" B L 5100 6200 50 
+F4 "RESET" O L 5100 6300 50 
+F5 "Vcc" I L 5100 6800 50 
+F6 "COPI" I L 5100 6100 50 
+F7 "GND" I L 5100 6900 50 
+F8 "RX" I L 5100 6500 50 
+F9 "TX" O L 5100 6600 50 
+F10 "SDA" B R 6100 6000 50 
+F11 "D2" B R 6100 6300 50 
+F12 "D3" B R 6100 6400 50 
+F13 "D4" B R 6100 6500 50 
+F14 "D5" B R 6100 6600 50 
+F15 "D6" B R 6100 6700 50 
+F16 "D7" B R 6100 6800 50 
+F17 "D8" B R 6100 6900 50 
+$EndSheet
 $EndSCHEMATC

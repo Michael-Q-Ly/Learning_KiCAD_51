@@ -118,4 +118,15 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 	1    1900 4100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Project3:DS1337_MLv1 U?
+U 1 1 61D31649
+P 3950 5150
+F 0 "U?" H 3950 5381 50  0000 C CNN
+F 1 "DS1337_MLv1" H 3950 5290 50  0000 C CNN
+F 2 "" H 4250 5150 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1337-DS1337C.pdf" H 4250 5150 50  0001 C CNN
+	1    3950 5150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

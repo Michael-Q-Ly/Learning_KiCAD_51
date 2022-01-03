@@ -12,3 +12,4 @@
 10. [x] One I2C Serial EEPROM, 1024kB, DIP-8/SOIC-8/TSSOP-8/DFN-8
 11. [x] One IC MCU 8-bit 32kB FLASH 32TQFP, Atmega328p-AU
 12. [x] One clock/timer IC
+13. [x] Two two-pin crystals

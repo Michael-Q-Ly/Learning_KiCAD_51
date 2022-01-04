@@ -508,17 +508,6 @@ F 3 "~" H 6150 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6150 3850 6150 3750
-Wire Wire Line
-	6150 4150 6150 4200
-Text Label 8150 2250 0    50   ~ 0
-AREF
-Text Label 6300 4200 0    50   ~ 0
-AREF
-Wire Wire Line
-	6300 4200 6150 4200
-Connection ~ 6150 4200
-Wire Wire Line
-	6150 4200 6150 4250
 $Comp
 L power:GNDPWR #PWR0107
 U 1 1 61DD3C23
@@ -607,4 +596,19 @@ Text Notes 4150 1100 0    50   ~ 0
 N2 - ATmega 328P-AU With Oscillator and Battery
 Text Notes 800  5050 0    50   ~ 0
 N4 - Connectors
+Wire Wire Line
+	6150 4150 6150 4200
+Wire Wire Line
+	6150 4200 6650 4200
+Wire Wire Line
+	6650 4200 6650 5600
+Wire Wire Line
+	6650 5600 8750 5600
+Wire Wire Line
+	8750 5600 8750 2250
+Wire Wire Line
+	8750 2250 8150 2250
+Connection ~ 6150 4200
+Wire Wire Line
+	6150 4200 6150 4250
 $EndSCHEMATC

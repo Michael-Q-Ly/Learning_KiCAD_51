@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 12)
     (tracks 0)
     (zones 0)
     (modules 17)
@@ -182,7 +182,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 61D3E7F2)
-    (at 205.0415 106.426)
+    (at 205.0415 107.696)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /61D22E5D)
@@ -298,7 +298,7 @@
   )
 
   (module Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer F.Cu) (tedit 5F68FEF0) (tstamp 61D3F262)
-    (at 240.509 116.1615 180)
+    (at 239.366 116.1615 180)
     (descr "Diode SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "diode handsolder")
     (path /61D25462)
@@ -336,7 +336,7 @@
   )
 
   (module LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer F.Cu) (tedit 5F68FEF1) (tstamp 61D399EC)
-    (at 245.8645 120.396)
+    (at 244.7215 120.396)
     (descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "LED handsolder")
     (path /61D23F53)
@@ -472,7 +472,7 @@
   )
 
   (module Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical (layer F.Cu) (tedit 5A19A425) (tstamp 61D3E837)
-    (at 207.5815 114.8715)
+    (at 207.5815 116.1415)
     (descr "Through hole straight socket strip, 2x03, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated")
     (tags "Through hole socket strip THT 2x03 2.54mm double row")
     (path /61D27AD2/61D2AF15)
@@ -566,7 +566,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder (layer F.Cu) (tedit 5F68FEEE) (tstamp 61D39A66)
-    (at 240.554 120.351)
+    (at 239.411 120.351)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /61D25BF7)
@@ -638,7 +638,7 @@
   )
 
   (module Package_SO:SO-8_5.3x6.2mm_P1.27mm (layer F.Cu) (tedit 5EA5315B) (tstamp 61D39A96)
-    (at 243.0145 109.982 180)
+    (at 241.8715 109.982 180)
     (descr "SO, 8 Pin (https://www.ti.com/lit/ml/msop001a/msop001a.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SO SO")
     (path /61D31649)
@@ -694,7 +694,7 @@
   )
 
   (module Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm (layer F.Cu) (tedit 5A02F2D3) (tstamp 61D3F4B6)
-    (at 230.378 109.582)
+    (at 229.235 109.582)
     (descr "8-Lead Plastic Small Outline (SM) - Medium, 5.28 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
     (path /61D3DE19)
@@ -748,7 +748,7 @@
   )
 
   (module Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm (layer F.Cu) (tedit 5A02F2D3) (tstamp 61D3F543)
-    (at 230.378 118.6815)
+    (at 229.235 118.6815)
     (descr "8-Lead Plastic Small Outline (SM) - Medium, 5.28 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
     (path /61D26D32)
@@ -906,7 +906,7 @@
   )
 
   (module Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm (layer F.Cu) (tedit 5D24C08C) (tstamp 61D3F219)
-    (at 245.7145 116.3665)
+    (at 244.5715 116.3665)
     (descr "SMD Crystal MicroCrystal CC7V-T1A/CM7V-T1A series https://www.microcrystal.com/fileadmin/Media/Products/32kHz/Datasheet/CC7V-T1A.pdf, 3.2x1.5mm^2 package")
     (tags "SMD SMT crystal")
     (path /61D331D7)
@@ -988,5 +988,18 @@
       (rotate (xyz 0 0 0))
     )
   )
+
+  (gr_circle (center 245.364 102.616) (end 245.364 101.346) (layer Edge.Cuts) (width 0.05) (tstamp 61D40596))
+  (gr_circle (center 245.364 127) (end 245.364 125.73) (layer Edge.Cuts) (width 0.05) (tstamp 61D40593))
+  (gr_circle (center 204.724 127) (end 204.724 125.73) (layer Edge.Cuts) (width 0.05) (tstamp 61D4058C))
+  (gr_circle (center 204.724 102.616) (end 204.724 101.346) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 203.2 129.032) (end 246.888 129.032) (layer Edge.Cuts) (width 0.05) (tstamp 61D40494))
+  (gr_line (start 202.692 101.092) (end 202.692 128.524) (layer Edge.Cuts) (width 0.05) (tstamp 61D40493))
+  (gr_line (start 246.888 100.584) (end 203.2 100.584) (layer Edge.Cuts) (width 0.05) (tstamp 61D40492))
+  (gr_line (start 247.396 128.524) (end 247.396 101.092) (layer Edge.Cuts) (width 0.05) (tstamp 61D40491))
+  (gr_arc (start 246.888 101.092) (end 247.396 101.092) (angle -90) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 246.888 128.524) (end 246.888 129.032) (angle -90) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 203.2 128.524) (end 202.692 128.524) (angle -90) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 203.2 101.092) (end 203.2 100.584) (angle -90) (layer Edge.Cuts) (width 0.05))
 
 )

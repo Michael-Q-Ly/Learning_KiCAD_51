@@ -16,6 +16,6 @@ This project will combine concepts I learned from the previous two projects
 
 ## Learning Objectives
 - - - -
-1. [ ] Explore Kicad's more powerful features such as splitting schematic diagrams into more than one sheet
-2. [ ] Use an external autorouter
-3. [ ] Convert a two-layer board into a four-layer board
+1. [x] Explore Kicad's more powerful features such as splitting schematic diagrams into more than one sheet
+2. [x] Use an external autorouter
+3. [x] Convert a two-layer board into a four-layer board

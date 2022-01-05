@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 46)
+    (drawings 50)
     (tracks 360)
     (zones 0)
     (modules 20)
@@ -2317,6 +2317,10 @@
     )
   )
 
+  (gr_poly (pts (xy 213.5616 114.5032) (xy 213.4616 114.5032) (xy 213.4616 114.4032) (xy 213.5616 114.4032)) (layer F.SilkS) (width 0.1) (tstamp 61D5ACC6))
+  (gr_poly (pts (xy 242.67 113.03) (xy 242.57 113.03) (xy 242.57 112.93) (xy 242.67 112.93)) (layer F.SilkS) (width 0.1) (tstamp 61D5ACC4))
+  (gr_poly (pts (xy 227.1268 115.8748) (xy 227.0268 115.8748) (xy 227.0268 115.7748) (xy 227.1268 115.7748)) (layer F.SilkS) (width 0.1) (tstamp 61D5ACC2))
+  (gr_poly (pts (xy 227.1268 107.2372) (xy 227.0268 107.2372) (xy 227.0268 107.1372) (xy 227.1268 107.1372)) (layer F.SilkS) (width 0.1))
   (dimension 42.418 (width 0.12) (layer Dwgs.User) (tstamp 61D4F1A6)
     (gr_text "42.418 mm" (at 223.901 99.314) (layer Dwgs.User) (tstamp 61D4F1A6)
       (effects (font (size 1 1) (thickness 0.15)))

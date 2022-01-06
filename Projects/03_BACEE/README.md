@@ -24,8 +24,11 @@ This project will combine concepts I learned from the previous two projects
 To use [FreeRouting](https://freerouting.org/), you may choose to install it by itself, or with LayoutEditor, which comes with FreeRouting. I chose to install LayoutEditor.
 
 To use FreeRouting, I copied the *freeRouting.jar* file into my project directory. I then exported a spectra design file from Kicad's Pcbnew window.
-Next, I ran the following in the command line:
+Next, I ran the following in the command line, (make sure you are referring to the correct directory!):
 
 	$java -jar freeRouting.jar
 
 This opened up a new window to allow me to select the spectra design file. I chose whichever spectra file I needed, and then ran autorouting.
+
+After autorouting finished, I simply imported the spectra session into Pcbnew and verified the routing using a DRC.
+That's it!
